@@ -1,8 +1,8 @@
 from src.mgc.config import ClientConfig
 
 from .auth import AuthProvider
-from .transport import Transport
 from .resources.compute.compute import Compute
+from .transport import Transport
 
 
 class ApiKeyAuth(AuthProvider):

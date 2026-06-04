@@ -1,8 +1,9 @@
-from .machine_types import MachineTypes
-from .virtual_machines import VirtualMachines
-from .images import Images
-from .snapshots import Snapshots
 from .backups import Backups
+from .images import Images
+from .machine_types import MachineTypes
+from .snapshots import Snapshots
+from .virtual_machines import VirtualMachines
+
 
 class Compute:
     def __init__(self, transport):

@@ -1,12 +1,13 @@
 # transport.py
 
+from importlib.metadata import PackageNotFoundError, version
 from typing import Any
 
 import httpx
 
 from .auth import AuthProvider
 from .config import ClientConfig
-from importlib.metadata import version, PackageNotFoundError
+
 
 def get_package_version() -> str:
     try:

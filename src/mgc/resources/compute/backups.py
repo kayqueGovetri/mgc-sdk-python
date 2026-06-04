@@ -2,6 +2,7 @@ from typing import Any
 
 from src.mgc.transport import Transport
 
+
 class Backups:
     def __init__(self, transport: Transport):
         self._transport = transport
