@@ -6,7 +6,14 @@ from .virtual_machines import VirtualMachines
 
 
 class Compute:
+    """Namespace for Magalu Cloud compute resources."""
+
     def __init__(self, transport):
+        """Create compute resource clients that share the same transport.
+
+        Args:
+            transport: Transport used by all compute resource clients.
+        """
         self.virtual_machines = VirtualMachines(transport)
         self.images = Images(transport)
         self.machine_types = MachineTypes(transport)
