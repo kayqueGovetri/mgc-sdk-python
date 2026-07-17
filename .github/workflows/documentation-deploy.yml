@@ -30,6 +30,11 @@ jobs:
         working-directory: docs-site
         run: zensical build --clean
 
+      - name: Debug files
+        run: |
+          ls -la docs-site
+          ls -la docs-site/site
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v5
