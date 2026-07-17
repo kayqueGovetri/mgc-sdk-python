@@ -52,6 +52,7 @@ dev = [
     "pytest>=9.0.3",
     "pytest-cov>=7.1.0",
     "ruff>=0.15.15",
+    "zensical>=0.0.50",
 ]
 
 [tool.setuptools.packages.find]
