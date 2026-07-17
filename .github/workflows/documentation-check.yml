@@ -1,8 +1,8 @@
 name: Documentation check
-
-pull_request:
-  paths:
-    - "docs-site/**"
+on:
+  pull_request:
+    paths:
+      - "docs-site/**"
 
 permissions:
   contents: read
