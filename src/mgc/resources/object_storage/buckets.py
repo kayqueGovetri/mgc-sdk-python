@@ -12,6 +12,7 @@ BucketACL = Literal[
 
 VersioningStatus = Literal["Enabled", "Suspended"]
 
+
 class Buckets:
     def __init__(self, client: boto3.client):
         self._client = client
@@ -107,5 +108,4 @@ class Buckets:
             },
         )
 
-    def public_url(self, name: str) -> str:
-        ...
+    def public_url(self, name: str) -> str: ...
