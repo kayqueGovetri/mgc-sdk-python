@@ -1,8 +1,7 @@
+from typing import Literal
+
 import boto3
 from botocore.exceptions import ClientError
-from typing import Any
-
-from typing import Literal
 
 BucketACL = Literal[
     "private",
