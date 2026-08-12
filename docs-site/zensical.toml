@@ -73,6 +73,11 @@ nav = [
           { "Volume Types" = "services/block-storage/volume-types.md" },
         ]
       },
+      { "Object Storage" = [
+          { "Overview" = "services/object-storage/index.md" },
+          { "Buckets" = "services/object-storage/buckets.md" },
+        ]
+      },
     ]
   },
 ]
